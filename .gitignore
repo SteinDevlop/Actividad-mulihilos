@@ -216,3 +216,88 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# --- PYTHON ---
+# Archivos de caché y bytes compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Extensiones C y librerías dinámicas de Python
+*.so
+
+# Distribución y empaquetado
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales e IDEs de Python
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.ropeproject
+.spyderproject
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# --- C++ ---
+# Objetos compilados
+*.o
+*.obj
+*.slo
+*.lo
+*.gch
+*.pch
+
+# Librerías estáticas y dinámicas compiladas
+*.a
+*.lib
+*.dll
+*.dylib
+
+# Archivos ejecutables y salidas de compilación
+*.exe
+*.out
+*.app
+build/
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+
+# Archivos de depuración y editores/IDEs
+*.ilk
+*.pdb
+*.dwo
+.vscode/
+.idea/
+*.suo
+*.user
+*.filters
+
+# Archivos temporales y de registro generales
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
