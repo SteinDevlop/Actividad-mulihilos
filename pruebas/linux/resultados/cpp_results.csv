@@ -1,0 +1,11 @@
+language,mode,workers,cpus,workload,run,time_seconds
+cpp,sequential,1,2,100000000,1,0.0729
+cpp,sequential,1,2,100000000,2,0.1510
+cpp,sequential,1,2,100000000,3,0.0658
+cpp,sequential,1,2,100000000,4,0.0680
+cpp,sequential,1,2,100000000,5,0.0674
+cpp,parallel,2,2,100000000,1,0.0783
+cpp,parallel,2,2,100000000,2,0.0783
+cpp,parallel,2,2,100000000,3,0.0753
+cpp,parallel,2,2,100000000,4,0.0808
+cpp,parallel,2,2,100000000,5,0.0743
