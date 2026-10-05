@@ -1,0 +1,16 @@
+language,mode,workers,cpus,workload,run,time_seconds
+python,sequential,1,2,100000000,1,83.8209
+python,sequential,1,2,100000000,2,93.1761
+python,sequential,1,2,100000000,3,105.4179
+python,sequential,1,2,100000000,4,84.0583
+python,sequential,1,2,100000000,5,83.9144
+python,threading,2,2,100000000,1,83.5184
+python,threading,2,2,100000000,2,79.7132
+python,threading,2,2,100000000,3,88.6396
+python,threading,2,2,100000000,4,96.2292
+python,threading,2,2,100000000,5,83.1033
+python,multiprocessing,2,2,100000000,1,62.1985
+python,multiprocessing,2,2,100000000,2,58.3683
+python,multiprocessing,2,2,100000000,3,56.9348
+python,multiprocessing,2,2,100000000,4,55.9048
+python,multiprocessing,2,2,100000000,5,56.5726

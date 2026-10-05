@@ -1,0 +1,6 @@
+Language: Python
+Mode: multiprocessing
+Workers: 2
+Workload: 100000000
+Execution time: 56.5726 seconds
+Result: 15594732105878822272
