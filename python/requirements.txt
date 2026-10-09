@@ -1,1 +1,0 @@
-# Sin dependencias externas: el proyecto usa unicamente la biblioteca estandar de Python..

@@ -1,0 +1,7 @@
+language,os,mode,processes,threads_per_process,total_workers,lp_affinity,workload,run,time_seconds,cpu_total_pct,result
+Python,linux,multiprocessing,4,1,4,1,10000000,1,2.141,99,399999987067243
+Python,linux,multiprocessing,4,1,4,1,10000000,2,2.258,98,399999987067243
+Python,linux,multiprocessing,4,1,4,1,10000000,3,2.078,99,399999987067243
+Python,linux,threading,1,4,4,1,10000000,1,2.173,98,399999987067243
+Python,linux,threading,1,4,4,1,10000000,2,2.172,97,399999987067243
+Python,linux,threading,1,4,4,1,10000000,3,1.985,100,399999987067243
