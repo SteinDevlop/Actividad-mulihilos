@@ -3,7 +3,6 @@
  * Laboratorio de Procesos e Hilos.
  * 
  */
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -18,11 +17,19 @@
 #include <algorithm>
 
 #ifdef _WIN32
+    #ifndef _WIN32_WINNT
+        #define _WIN32_WINNT 0x0600
+    #endif
     #ifndef WIN32_LEAN_AND_MEAN
         #define WIN32_LEAN_AND_MEAN
     #endif
     #include <windows.h>
     #include <process.h>
+
+    // ¡DECLARACIÓN GLOBAL AQUÍ! Esto le enseña a g++ qué es la función antes de usarla.
+    extern "C" {
+        __declspec(dllimport) DWORD WINAPI GetCurrentProcessorNumber(void);
+    }
 #else
     #define _GNU_SOURCE
     #include <pthread.h>
@@ -32,6 +39,8 @@
     #include <sys/resource.h>
     #include <sys/time.h>
 #endif
+
+
 
 // ============================================================================
 // CONSTANTES Y ESTRUCTURAS DE DATOS
@@ -97,13 +106,15 @@ inline std::string get_os_name() {
 #endif
 }
 
-inline int get_current_lp() {
+int get_current_lp() {
 #ifdef _WIN32
     return static_cast<int>(GetCurrentProcessorNumber());
 #else
-    return sched_getcpu();
+    return sched_getcpu(); 
 #endif
 }
+
+
 
 inline std::string get_affinity_label() {
 #ifdef _WIN32

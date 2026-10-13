@@ -1,15 +1,21 @@
-=== CPU ===
+﻿=== CPU ===
+
 
 Name                      : AMD Ryzen 5 5500U with Radeon Graphics         
 NumberOfCores             : 6
 NumberOfLogicalProcessors : 12
 
 
+
+
 === SO ===
+
 
 Caption        : Microsoft Windows 11 Home Single Language
 Version        : 10.0.26300
 OSArchitecture : 64 bits
+
+
 
 
 === Memoria (GB) ===
@@ -18,6 +24,12 @@ OSArchitecture : 64 bits
 === Python ===
 Python 3.13.1
 
-=== Compilador (gcc) ===
-gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0
+=== GIL activo (debe ser True; en Python < 3.13 no existe el atributo) ===
+True
 
+=== Compilador (g++) ===
+g++.exe (MinGW.org GCC-6.3.0-1) 6.3.0
+
+=== ParÃ¡metros ===
+Runs=5 Warmup=1 CpuLevels=1,2,3
+CppWorkload=100000000 PyWorkload=10000000
